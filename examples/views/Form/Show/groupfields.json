@@ -1,0 +1,446 @@
+{
+  "simple": [
+    {
+      "name": "field1",
+      "label": "用户编号",
+      "form": {
+        "tag": "input",
+        "placeholder": "请输入field1",
+        "rules": [{
+          "required": true, "message": "请输入field1"
+        }]
+      }
+    },
+    {
+      "name": "field2",
+      "label": "表位类型",
+      "form": {
+        "tag": "select",
+        "placeholder": "请输入field2",
+        "rules": [
+          {
+            "required": true,
+            "message": "必填1111"
+          }
+        ]
+      },
+      "options": [
+        {"label": "类型一", "value": "1"},
+        {"label": "类型二", "value": "2"},
+        {"label": "类型三", "value": "3"},
+        {"label": "类型四", "value": "4"},
+        {"label": "类型五", "value": "5"}
+      ],
+      "render": { "type": "select" }
+    },
+    {
+      "name": "field3",
+      "label": "第一次抄表日期",
+      "form": {
+        "tag": "date",
+        "placeholder": "请输入field3",
+        "rules": [
+          {
+            "required": true,
+            "message": "必填1111"
+          }
+        ]
+      },
+      "render": { "type": "time", "timeType": "YYYY-MM-DD" }
+    },
+    {
+      "name": "field4",
+      "label": "表位描述",
+      "labelTip": "这是一段关于表位的描述",
+      "form": {
+        "tag": "input",
+        "placeholder": "请输入field4"
+      }
+    },
+    {
+      "name": "field5",
+      "label": "仪表状态",
+      "form": {
+        "tag": "select",
+        "placeholder": "请输入field5",
+        "rules": [
+          {
+            "required": true,
+            "message": "必填1111"
+          }
+        ]
+      },
+      "options": [
+        {"label": "正常", "value": "1"},
+        {"label": "失效", "value": "2"}
+      ],
+      "render": { "type": "select" }
+    },
+    {
+      "name": "field6",
+      "label": "文件",
+      "form": {
+        "tag": "file",
+        "placeholder": "请输入field6",
+        "rules": [
+          {
+            "required": true,
+            "message": "必填1111"
+          }
+        ]
+      },
+      "render": { "type": "file" }
+    },
+    {
+      "name": "field7",
+      "label": "仪表照片",
+      "form": {
+        "tag": "file",
+        "placeholder": "请输入field7",
+        "rules": [
+          { 
+            "required": true,
+            "message": "必填1111"
+          }
+        ]
+      },
+      "render": { "type": "file" }
+    }
+  ],
+  "group": [
+    {
+      "name": "field1",
+      "label": "用户编号",
+      "form": {
+        "tag": "input",
+        "placeholder": "请输入field1",
+        "rules": [{
+          "required": true, "message": "请输入field1"
+        }]
+      }
+    },
+    {
+      "name": "field8",
+      "label": "用户名称",
+      "form": {
+        "tag": "input"
+      }
+    },
+    {
+      "name": "field9",
+      "label": "接水点编号",
+      "form": {
+        "tag": "input"
+      }
+    },
+    {
+      "name": "field10",
+      "label": "用户类型",
+      "form": {
+        "tag": "select",
+        "placeholder": "请输入field2",
+        "rules": [
+          {
+            "required": true,
+            "message": "必填1111"
+          }
+        ]
+      },
+      "options": [
+        {"label": "类型一", "value": "1"},
+        {"label": "类型二", "value": "2"}
+      ],
+      "render": { "type": "select" }
+    },
+    {
+      "name": "field11",
+      "label": "用户状态",
+      "form": {
+        "tag": "select",
+        "placeholder": "请输入field2",
+        "rules": [
+          {
+            "required": true,
+            "message": "必填1111"
+          }
+        ]
+      },
+      "options": [
+        {"label": "状态一", "value": "1"},
+        {"label": "状态二", "value": "2"}
+      ],
+      "render": { "type": "select" }
+    },
+    {
+      "name": "field12",
+      "label": "所属区域",
+      "form": {
+        "tag": "select",
+        "placeholder": "请输入field2",
+        "rules": [
+          {
+            "required": true,
+            "message": "必填1111"
+          }
+        ]
+      },
+      "options": [
+        {"label": "区域一", "value": "1"},
+        {"label": "区域二", "value": "2"}
+      ],
+      "render": { "type": "select" }
+    },
+    {
+      "name": "field13",
+      "label": "用户地址",
+      "form": {
+        "tag": "input"
+      }
+    },
+    {
+      "name": "field14",
+      "label": "立户日期",
+      "form": {
+        "tag": "date",
+        "placeholder": "请输入field3",
+        "rules": [
+          {
+            "required": true,
+            "message": "必填1111"
+          }
+        ]
+      },
+      "render": { "type": "time", "timeType": "YYYY-MM-DD" }
+    },
+    {
+      "name": "field15",
+      "label": "销户日期",
+      "form": {
+        "tag": "date",
+        "placeholder": "请输入field3",
+        "rules": [
+          {
+            "required": true,
+            "message": "必填1111"
+          }
+        ]
+      },
+      "render": { "type": "time", "timeType": "YYYY-MM-DD" }
+    },
+    {
+      "name": "field2",
+      "label": "表位类型",
+      "form": {
+        "tag": "select",
+        "placeholder": "请输入field2",
+        "rules": [
+          {
+            "required": true,
+            "message": "必填1111"
+          }
+        ]
+      },
+      "options": [
+        {"label": "类型一", "value": "1"},
+        {"label": "类型二", "value": "2"},
+        {"label": "类型三", "value": "3"},
+        {"label": "类型四", "value": "4"},
+        {"label": "类型五", "value": "5"}
+      ],
+      "render": { "type": "select" }
+    },
+    {
+      "name": "field3",
+      "label": "第一次抄表日期",
+      "form": {
+        "tag": "date",
+        "placeholder": "请输入field3",
+        "rules": [
+          {
+            "required": true,
+            "message": "必填1111"
+          }
+        ]
+      },
+      "render": { "type": "time", "timeType": "YYYY-MM-DD" }
+    },
+    {
+      "name": "field4",
+      "label": "表位描述",
+      "labelTip": "这是一段关于表位的描述",
+      "form": {
+        "tag": "input",
+        "placeholder": "请输入field4"
+      }
+    },
+    {
+      "name": "field5",
+      "label": "仪表状态",
+      "form": {
+        "tag": "select",
+        "placeholder": "请输入field5",
+        "rules": [
+          {
+            "required": true,
+            "message": "必填1111"
+          }
+        ]
+      },
+      "options": [
+        {"label": "正常", "value": "1"},
+        {"label": "失效", "value": "2"}
+      ],
+      "render": { "type": "select" }
+    },
+    {
+      "name": "field6",
+      "label": "文件",
+      "form": {
+        "tag": "file",
+        "placeholder": "请输入field6",
+        "rules": [
+          {
+            "required": true,
+            "message": "必填1111"
+          }
+        ]
+      },
+      "render": { "type": "file" }
+    },
+    {
+      "name": "field7",
+      "label": "仪表照片",
+      "form": {
+        "tag": "file",
+        "placeholder": "请输入field7",
+        "rules": [
+          { 
+            "required": true,
+            "message": "必填1111"
+          }
+        ]
+      },
+      "render": { "type": "file" }
+    },
+    {
+      "name": "field16",
+      "label": "证件类型",
+      "form": {
+        "tag": "select",
+        "placeholder": "请输入field5",
+        "rules": [
+          {
+            "required": true,
+            "message": "必填1111"
+          }
+        ]
+      },
+      "options": [
+        {"label": "身份证", "value": "1"},
+        {"label": "学生证", "value": "2"}
+      ],
+      "render": { "type": "select" }
+    },
+    {
+      "name": "field17",
+      "label": "证件号码",
+      "form": {
+        "tag": "input"
+      }
+    },
+    {
+      "name": "field18",
+      "label": "联系人",
+      "form": {
+        "tag": "input"
+      }
+    },
+    {
+      "name": "field19",
+      "label": "手机号",
+      "form": {
+        "tag": "input"
+      }
+    },
+    {
+      "name": "field20",
+      "label": "纳税人识别号",
+      "form": {
+        "tag": "input"
+      }
+    },
+    {
+      "name": "field21",
+      "label": "电子邮箱",
+      "form": {
+        "tag": "input"
+      }
+    },
+    {
+      "name": "field22",
+      "label": "用水性质",
+      "form": {
+        "tag": "select",
+        "placeholder": "请输入field5",
+        "rules": [
+          {
+            "required": true,
+            "message": "必填1111"
+          }
+        ]
+      },
+      "options": [
+        {"label": "居民用水", "value": "1"},
+        {"label": "城市用水", "value": "2"}
+      ],
+      "render": { "type": "select" }
+    },
+    {
+      "name": "field23",
+      "label": "供水人口数",
+      "form": {
+        "tag": "input"
+      }
+    },
+    {
+      "name": "field23",
+      "label": "供水人口数",
+      "form": {
+        "tag": "input"
+      }
+    },
+    {
+      "name": "field24",
+      "label": "开户银行",
+      "form": {
+        "tag": "input"
+      }
+    },
+    {
+      "name": "field25",
+      "label": "开户账号",
+      "form": {
+        "tag": "input"
+      }
+    },
+    {
+      "name": "field26",
+      "label": "开票类型",
+      "form": {
+        "tag": "select",
+        "placeholder": "请输入field5",
+        "rules": [
+          {
+            "required": true,
+            "message": "必填1111"
+          }
+        ]
+      },
+      "options": [
+        {"label": "类型一", "value": "1"},
+        {"label": "类型二", "value": "2"}
+      ],
+      "render": { "type": "select" }
+    }
+  ]
+}

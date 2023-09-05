@@ -1,0 +1,189 @@
+/* 当assets/elTheme/config.json 有修改也需要同步更新此文件
+  避免有些设计稿上的设计，element不支持配置，需要在此文件定义变量
+  该文件内所有变量允许整个项目中使用，请做好注释
+ */
+/* 层级 */
+$--zindex-overhigh: 999
+$--zindex-high: 99
+$--zindex-middle: 9
+$--zindex-low: 1
+/* 色系 */
+$--color-primary: #3171F2
+$--color-success: #52C41A
+$--color-warning: #FAAD14
+$--color-danger: #FF4D4F
+/* 主要文字 */
+$--color-text-primary: #262626
+// 常规文字、图标
+$--color-text-regular: #8C8C8C
+// 次要文字
+$--color-text-secondary: #626262
+// 占位、禁用文字
+$--color-text-placeholder: #BFBFBF
+$--box-shadow-base: 0 2px 4px 0 rgba(0, 0, 0, 0.08), 0 0 6px 0 rgba(0, 0, 0, 0.08)
+$--box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+$--color-info: #BFBFBF
+$--color-white: #fff
+$--background-color-base: #F5F5F5
+$--border-color-extra-light: #F2F6FC
+$--border-color-base: #D9D9D9
+$--border-color-light: #D9D9D9
+
+/* 圆角 */
+$--border-radius-small: 2px
+$--border-radius-base: 4px
+
+/* 字体变量 */
+// 主标题文字大小
+$--font-size-extra-large: 48px
+// 标题文字大小
+$--font-size-large: 16px
+// 小标题文字大小
+$--font-size-medium: 14px
+// 正文（小）文字大小
+$--font-size-small: 12px
+// 正文字体厚度
+$--font-weight-secondary: 400
+$--font-weight-primary: 500
+// 正文文字、小标题、说明、最常使用
+$--font-size-base: 14px
+// 正文行高 14px
+$--font-line-height-primary: 22px
+// 辅助性文字行高 12px
+$--font-line-height-secondary: 20px
+// 16号字体行高24px
+$--font-line-height-large: 24px
+/* 配套文字及对应行高 */
+@mixin font-primary
+  font-size: $--font-size-base
+  line-height: $--font-line-height-primary
+@mixin font-secondary
+  font-size: $--font-size-small
+  line-height: $--font-line-height-secondary
+@mixin font-large
+  font-size: $--font-size-large
+  line-height: $--font-line-height-large
+
+/* 边距(padding/margin) 以8为倍数*/
+// 默认、表单、主内边距
+$--padding-primary: 8px
+// 较大内边距
+$--padding-size-medium: 16px
+// 最大内边距
+$--padding-size-large: 24px
+// 默认、表单、主外边距
+$--margin-primary: 8px
+// 较大外边距
+$--margin-size-medium: 16px
+// 用于表单一些辅助类（非最外层）的边距
+$--margin-size-secondary: 20px
+// 最大外边距
+$--margin-size-large: 24px
+
+/* 按钮 */
+$--button-border-radius: $--border-radius-base
+$--button-medium-border-radius: $--border-radius-base
+$--button-font-size: 14px
+$--button-medium-font-size: 14px
+$--button-small-font-size: 12px
+$--button-mini-font-size: 12px
+$--button-padding-horizontal: 12px
+$--button-medium-padding-horizontal: 12px
+$--button-small-padding-horizontal: 8px
+$--button-mini-padding-horizontal: 8px
+$--button-padding-vertical: 6px
+$--button-medium-padding-vertical: 6px
+$--button-small-padding-vertical: 4px
+$--button-mini-padding-vertical: 4px
+$--button-font-weight: normal
+$--button-disabled-font-color: #BFBFBF
+$--button-disabled-background-color: #F5F5F5
+$--button-disabled-border-color: #D9D9D9
+$--button-height: 28px
+$--button-medium-height: 28px
+$--button-small-height: 22px
+$--button-mini-height: 22px
+
+
+$--input-border-radius: $--border-radius-small
+$--input-height: 28px
+$--input-medium-height: 28px
+$--input-small-height: 24px
+$--input-mini-height: 22px
+$--input-placeholder-color: $--color-text-placeholder
+$--input-icon-color: $--color-text-placeholder
+$--transfer-panel-header-background-color: $--color-white
+$--tooltip-padding: 8px
+$--collapse-header-background-color: $--background-color-base
+$--collapse-content-font-color: $--color-info
+$--collapse-border-color: $--border-color-base
+/* 表格 */
+$--table-font-color: $--color-text-primary
+$--table-header-font-color: $--color-text-regular
+$--table-header-background-color: #F9F9F9
+$--table-border-color: #F1F1F1
+$--table-row-hover-background-color: #F2F2F2
+$table-fixed-header-zindex: 5 // 表格固定列表头的z-index
+$--table-row-unclick-background-color: rgba(0,0,0,0.15)
+// $--table-border-color: rgba(0, 0, 0, 0.06)
+$--table-wrapper-line-height: 36px
+$--th-font-size: 12px
+$--th-font-weight: 500
+$--td-font-size: 12px
+$--td-font-weight: $--font-weight-secondary
+/* 表格页脚样式定义 */
+$--table-pagination-color: #8c8c8c
+$--table-pagination-font-weight: $--font-weight-secondary
+$--table-pagination-hover-color: #262626
+$--table-border-color: #F1F1F1
+$--carousel-indicator-height: 2px
+$--dialog-padding-primary: 24px
+$--input-font-color: $--color-text-primary
+/* 链接 */
+$--link-default-font-color: $--color-primary
+$--link-text-decoration: underline
+/* 信息体 */
+$--message-close-hover-color: $--color-primary
+$--message-close-size: 12px
+$--message-box-padding-vertical: 16px
+
+/*滚动条尺寸*/
+$--scroll-size-default: 7px
+/*滚动条里面小方块默认颜色*/
+$--scroll-thumb-default: #C3C3C3
+/*表格的滚动条里面小方块*/
+$--scroll-thumb-table: #d2d2d2
+/*表格的滚动条里面小方块hover*/
+$--scroll-thumb-hover: rgba(0,0,0,0.45)
+/*表格的滚动条里面轨道*/
+$--scroll-track-table: #f7f7f7
+/* 表格单元格分割线颜色 */
+$--divider-color: rgba(0, 0, 0, 0.06)
+
+/* tagview及底层内容框架背景色 */
+$--content-backgroud: #eceff0
+$--content-backgroud-active: #fff
+$--tagview-height: 30px
+$--tagview-backgroud-active: #fff
+$--tagview-backgroud: #fff
+
+/* form 表单全局变量 */
+// 表单上下外边距
+$--form-vertical-margin: var(--formVerticalMargin, $--margin-size-medium)
+// formItem间距高度
+$--formItem-space: var(--space, $--margin-size-medium)
+// 只读表单间距高度
+$--formItem-readOnlySpace: var(--readOnlySpace, 6px)
+$--formItem-label-padding: $--padding-primary
+// 表单label背景色
+$--form-label-background: #f9f9f9
+// 表单内容色
+$--form-content-background: #fff
+// 表单分格边框线颜色
+$--form-divider-border-color: #e5e5e5
+// 表单行高
+$--form-text-line-height: $--font-line-height-primary
+// 表单字体
+$--font-text-size-base: $--font-size-base
+
+/* 字体 */

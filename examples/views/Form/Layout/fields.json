@@ -1,0 +1,516 @@
+{
+  "simple": [
+    {
+      "name": "field1",
+      "label": "中华人民共和国合同法章节",
+      "form": {
+        "tag": "input",
+        "placeholder": "请输入field1",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入field1"
+          }
+        ]
+      }
+    },
+    {
+      "name": "field2",
+      "label": "field2",
+      "form": {
+        "tag": "select",
+        "placeholder": "请输入field2",
+        "multiple": true,
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入field2"
+          }
+        ],
+        "options": [
+          {
+            "label": "1",
+            "value": "1"
+          },
+          {
+            "label": "2",
+            "value": "2"
+          },
+          {
+            "label": "3",
+            "value": "3"
+          },
+          {
+            "label": "4",
+            "value": "4"
+          },
+          {
+            "label": "5",
+            "value": "5"
+          }
+        ]
+      }
+    },
+    {
+      "name": "field3",
+      "label": "field3",
+      "form": {
+        "tag": "cascader",
+        "placeholder": "请输入field3",
+        "multiple": true,
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入field3"
+          }
+        ],
+        "options": [
+          {
+            "value": 1,
+            "label": "农、林、牧、渔业",
+            "parentId": 0
+          },
+          {
+            "value": 2,
+            "label": "采矿业",
+            "parentId": 1
+          },
+          {
+            "value": 3,
+            "label": "制造业",
+            "parentId": 1
+          },
+          {
+            "value": 22,
+            "label": "林业",
+            "parentId": 1
+          },
+          {
+            "value": 23,
+            "label": "畜牧业",
+            "parentId": 1
+          },
+          {
+            "value": 24,
+            "label": "渔业",
+            "parentId": 1
+          },
+          {
+            "value": 25,
+            "label": "农、林、牧、渔专业及辅助性活动",
+            "parentId": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "field4",
+      "label": "field4",
+      "form": {
+        "tag": "time",
+        "placeholder": "请输入field4"
+      }
+    },
+    {
+      "name": "field5",
+      "label": "field5",
+      "form": {
+        "tag": "date",
+        "placeholder": "请输入field5",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入field5"
+          }
+        ]
+      }
+    },
+    {
+      "name": "field6",
+      "label": "field6",
+      "form": {
+        "tag": "timeRange",
+        "placeholder": "请输入field6",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入请输入field6"
+          }
+        ]
+      }
+    },
+    {
+      "name": "field7",
+      "label": "field7",
+      "form": {
+        "tag": "radio",
+        "placeholder": "请输入field7",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入field3"
+          }
+        ],
+        "options": [
+          {
+            "label": "无",
+            "value": "0"
+          },
+          {
+            "label": "有",
+            "value": "1"
+          }
+        ]
+      }
+    },
+    {
+      "name": "field8",
+      "label": "field8",
+      "form": {
+        "tag": "checkbox",
+        "options": [
+          {
+            "label": "无",
+            "value": "0"
+          },
+          {
+            "label": "有",
+            "value": "1"
+          }
+        ],
+        "placeholder": "请输入field8"
+      }
+    },
+    {
+      "name": "field9",
+      "label": "field9",
+      "form": {
+        "tag": "switch",
+        "placeholder": "请输入field9"
+      }
+    },
+    {
+      "name": "field10",
+      "label": "field10",
+      "form": {
+        "tag": "numberRange",
+        "placeholder": "请输入field10"
+      }
+    },
+    {
+      "name": "field11",
+      "label": "field11",
+      "form": {
+        "tag": "number",
+        "placeholder": "请输入field11"
+      }
+    },
+    {
+      "name": "field",
+      "label": "field",
+      "form": {
+        "tag": "input",
+        "placeholder": "请输入field1",
+        "inputType": "textarea"
+      }
+    },
+    {
+      "name": "field12",
+      "label": "field12",
+      "form": {
+        "tag": "file",
+        "placeholder": "请输入field12"
+      }
+    }
+  ],
+  "simpleRowCol": [
+    {
+      "name": "field1",
+      "label": "field1field1field1field1field1field1field1",
+      "form": {
+        "tag": "input",
+        "rowSpan": 4,
+        "placeholder": "请输入field1",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入field1"
+          }
+        ]
+      }
+    },
+    {
+      "name": "field2",
+      "label": "field2",
+      "form": {
+        "tag": "select",
+        "rowSpan": 2,
+        "colSpan": 2,
+        "placeholder": "请输入field2",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入field2"
+          }
+        ],
+        "options": [
+          {
+            "label": "1",
+            "value": "1"
+          },
+          {
+            "label": "2",
+            "value": "2"
+          },
+          {
+            "label": "3",
+            "value": "3"
+          },
+          {
+            "label": "4",
+            "value": "4"
+          },
+          {
+            "label": "5",
+            "value": "5"
+          }
+        ]
+      }
+    },
+    {
+      "name": "field3",
+      "label": "field3",
+      "form": {
+        "colSpan": 2,
+        "tag": "cascader",
+        "placeholder": "请输入field3",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入field3"
+          }
+        ],
+        "options": [
+          {
+            "label": "1",
+            "value": "1"
+          },
+          {
+            "label": "2",
+            "value": "2"
+          },
+          {
+            "label": "3",
+            "value": "3"
+          },
+          {
+            "label": "4",
+            "value": "4"
+          },
+          {
+            "label": "5",
+            "value": "5"
+          }
+        ]
+      }
+    },
+    {
+      "name": "field4",
+      "label": "field4",
+      "form": {
+        "tag": "time",
+        "placeholder": "请输入field4"
+      }
+    },
+    {
+      "name": "field5",
+      "label": "field5",
+      "form": {
+        "tag": "date",
+        "colSpan": 2,
+        "placeholder": "请输入field5",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入field5"
+          }
+        ]
+      }
+    },
+    {
+      "name": "field6",
+      "label": "field6",
+      "form": {
+        "tag": "timeRange",
+        "placeholder": "请输入field6",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入field6"
+          }
+        ]
+      }
+    },
+    {
+      "name": "field7",
+      "label": "field7",
+      "form": {
+        "tag": "radio",
+        "placeholder": "请输入field7",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入field7"
+          }
+        ],
+        "options": [
+          {
+            "label": "无",
+            "value": "0"
+          },
+          {
+            "label": "有",
+            "value": "1"
+          }
+        ]
+      }
+    },
+    {
+      "name": "field8",
+      "label": "field8",
+      "form": {
+        "tag": "checkbox",
+        "options": [
+          {
+            "label": "无",
+            "value": "0"
+          },
+          {
+            "label": "有",
+            "value": "1"
+          }
+        ],
+        "placeholder": "请输入field8"
+      }
+    },
+    {
+      "name": "field9",
+      "label": "field9",
+      "form": {
+        "tag": "switch",
+        "placeholder": "请输入field9"
+      }
+    },
+    {
+      "name": "field10",
+      "label": "field10",
+      "form": {
+        "tag": "numberRange",
+        "placeholder": "请输入field10"
+      }
+    },
+    {
+      "name": "field11",
+      "label": "field11",
+      "form": {
+        "tag": "number",
+        "placeholder": "请输入field11"
+      }
+    },
+    {
+      "name": "field12",
+      "label": "field12",
+      "form": {
+        "tag": "file",
+        "placeholder": "请输入field12"
+      }
+    },
+    {
+      "name": "field",
+      "label": "field",
+      "form": {
+        "tag": "input",
+        "colSpan": 4,
+        "placeholder": "请输入field1",
+        "inputType": "textarea"
+      }
+    }
+  ],
+  "spans": [
+    {
+      "name": "field1",
+      "label": "field1field1field1field1field1field1field1",
+      "form": {
+        "tag": "input",
+        "placeholder": "请输入field1",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入field1",
+            "trigger": "blur"
+          }
+        ]
+      }
+    },
+    {
+      "name": "field2",
+      "label": "field2",
+      "form": {
+        "tag": "select",
+        "placeholder": "请输入field2",
+        "options": [
+          {
+            "label": "1",
+            "value": "1"
+          },
+          {
+            "label": "2",
+            "value": "2"
+          },
+          {
+            "label": "3",
+            "value": "3"
+          },
+          {
+            "label": "4",
+            "value": "4"
+          },
+          {
+            "label": "5",
+            "value": "5"
+          }
+        ],
+        "rowSpan": 2
+      }
+    },
+    {
+      "name": "field3",
+      "label": "field3",
+      "form": {
+        "tag": "date",
+        "colspan": 2
+      }
+    },
+    {
+      "name": "field4",
+      "label": "field4",
+      "form": {
+        "tag": "input"
+      }
+    },
+    {
+      "name": "field5",
+      "label": "field5",
+      "form": {
+        "tag": "input"
+      }
+    },
+    {
+      "name": "field7",
+      "label": "field7",
+      "form": {
+        "tag": "input"
+      }
+    }
+  ]
+}

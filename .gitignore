@@ -1,0 +1,31 @@
+.DS_Store
+node_modules
+.scannerwork
+/dist
+/public/views/
+
+/tests/e2e/videos/
+/tests/e2e/screenshots/
+/examples/docs/codeDocs/*
+/lib/
+.yalc
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+report-webpack.json
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

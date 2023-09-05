@@ -1,0 +1,15 @@
+// 替代字型的数字的字体
+/*
+ * normal: 导致使用这些替代符号的失活
+ * ordinal: 强制使用特殊的符号作为序号标记
+ * slashed-zero: 强制使用带有斜杠的0
+ * lining-nums: 激活数字都在基线上的一组数字
+ * oldstyle-nums: 激活一组数字，其中一些数字，如3,4,7,9有下降
+ * proportional-nums: 激活数字不是全部相同大小的一组数字
+ * tabular-nums: 激活一组数字，其中的数字都是相同的大小，使他们可以像表中一样轻松对齐
+ * diagonal-fractions: 激活分子和分母变得更小并用斜线分隔的一组数字
+ * stacked-fractions: 激活一组数字，其中一些数字，如3,4,7,9有下降
+ * oldstyle-nums: 激活一组数字，其中分子和分母被缩小，堆叠并用一条水平线分开
+ */
+@mixin font-variant-numeric($type)
+  font-variant-numeric: $type

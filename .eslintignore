@@ -1,0 +1,9 @@
+/examples/docs/
+/examples/assets/icon/*
+/assets/icon/*
+*.md
+
+/examples/views/App/ToolMenu/MdReader.vue
+/examples/views/App/ToolMenu/CodeReader.vue
+
+report-webpack.json

@@ -1,0 +1,42 @@
+{
+  "city": {
+    "guangdong": [
+      {
+        "label": "广州市",
+        "value": "guangzhou"
+      },
+      {
+        "label": "深圳市",
+        "value": "shenzhen"
+      },
+      {
+        "label": "汕头市",
+        "value": "shantou"
+      }
+    ],
+    "henan": [
+      {
+        "label": "郑州市",
+        "value": "zhengzhou"
+      },
+      {
+        "label": "开封市",
+        "value": "kaifeng"
+      }
+    ]
+  },
+  "district": {
+    "guangzhou": [{
+      "label": "天河区",
+      "value": "440106"
+    }],
+    "zhengzhou": [{
+      "label": "中原区",
+      "value": "410102"
+    }],
+    "kaifeng": [{
+      "label": "龙亭区",
+      "value": "410202"
+    }]
+  }
+}

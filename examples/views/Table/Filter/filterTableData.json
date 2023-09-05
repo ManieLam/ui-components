@@ -1,0 +1,47 @@
+[
+  {
+    "id":1,
+    "name":"李兴伟",
+    "position":"辽宁省铁岭市",
+    "office":"xc",
+    "age":59,
+    "startDate":1400053756697,
+    "endDate":1400053756697,
+    "monthDate": 1609430400000,
+    "salary":"326988",
+    "job":1,
+    "sex":0,
+    "hobby":[1],
+    "money": 154125
+  },
+  {
+    "id":2,
+    "name":"孙鹏朋",
+    "position":"内蒙古省通辽市",
+    "office":"xn",
+    "age":63,
+    "startDate":1417957218712,
+    "endDate":1417957218712,
+    "monthDate": 1612108800000,
+    "salary":"225878",
+    "job":2,
+    "sex":0,
+    "hobby":[1,2],
+    "money": 1545
+  },
+  {
+    "id":3,
+    "name":"喻守朋",
+    "position":"山东省聊城市",
+    "office":"hs",
+    "age":42,
+    "startDate":1545962896117,
+    "endDate":1545962896117,
+    "monthDate": 1622476800000,
+    "salary":"709773",
+    "job":3,
+    "sex":1,
+    "hobby":[2,3],
+    "money": 541
+  }
+]

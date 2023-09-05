@@ -1,0 +1,125 @@
+@import './var.sass'
+.el-table
+  .el-table__fixed-header-wrapper
+    // 让固定列的表头层级高于固定列的表格内容
+    z-index: $table-fixed-header-zindex
+  .is-sortable
+    .caret-wrapper
+      margin-left: 1px
+  .has-gutter, .el-table__fixed-header-wrapper
+    td, th
+      border-bottom: 0
+      border-color: $--table-border-color
+  td, th
+    padding: 0 0
+  td.operation-column, th.operation-column
+    text-align: center
+    &.is-left
+      text-align: left
+    &.is-right
+      text-align: right
+    &.is-center
+      text-align: center
+    .cell
+      white-space: nowrap
+      .el-link
+        font-size: $--td-font-size
+      .caret-wrapper
+        height: unset
+        .sort-caret.ascending
+          top: unset
+          margin-top: -50%
+        .sort-caret.descending
+          bottom: unset
+          margin-bottom: -50%
+    .cell.cell-render
+      padding: 0
+    .cell-render.cell-text-right
+      text-align: right
+  th
+    font-size: $--th-font-size
+    font-weight: $--th-font-weight
+  td
+    font-size: $--td-font-size
+    font-weight: $--td-font-weight
+.el-table.el-table--large
+  th .cell
+    font-size: 14px
+    line-height: 50px
+  td .cell
+    font-size: 14px
+    line-height: 48px
+.el-table.el-table--medium
+  th .cell
+    line-height: 40px
+  td .cell
+    line-height: 38px
+.el-table.el-table--small
+  th .cell
+    line-height: 32px
+  td .cell
+    line-height: 30px
+.el-table.el-table--mini
+  th .cell
+    line-height: 30px
+  td .cell
+    line-height: 22px
+
+.el-table.el-table--large, .el-table.el-table--medium
+  .el-table__fixed-body-wrapper
+    // 单元格的border多占1px，因此需要34+1，否则固定列的表格内容会挡住表头的下边框
+    // top: 35px !important
+    // margin-top: 1px
+    padding-bottom: 7px
+  .el-table__fixed-right-patch
+    // height: 34px !important
+.el-table.el-table--small, .el-table.el-table--mini
+  .el-table__fixed-body-wrapper
+    // top: 31px !important
+    // margin-top: 1px
+    padding-bottom: 7px
+  .el-table__fixed-right-patch
+    // height: 30px !important
+
+.datatable-table-wrapper .datatable-table[data-v-ea4e29ac] .el-table__body-wrapper
+  // 设置垂直滚动条不占用表格内容，防止固定列错位
+  overflow-y: auto !important
+
+// 表格数据为空时提示语，相对于el-table水平垂直居中
+.el-table__body-wrapper
+  position: unset
+  .el-table__empty-text
+    position: absolute
+    width: unset
+    font-size: 16px
+    left: 0
+    right: 0
+
+.el-table
+  .row-warning
+    background-color: $--color-warning !important
+  .row-success
+    background-color: $--color-success !important
+  .row-danger
+    background-color: $--color-danger !important
+  .row-info
+    background-color: $--border-color-base
+  .row-disabled
+    // pointer-events: none
+    background-color: $--background-color-base
+    td
+      color: $--color-text-placeholder
+
+.cell-column-tooltip
+  overflow: hidden
+  text-overflow: ellipsis
+
+.el-popover__title, .el-tooltip__popper[x-placement^=top]
+  margin-bottom: 0
+.anso-dataform__body[inline=true] .el-select__tags-text
+  max-width: 64px
+  display: block
+  float: left
+  text-overflow: ellipsis
+  overflow: hidden
+  white-space: nowrap

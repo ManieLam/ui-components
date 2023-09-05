@@ -1,0 +1,208 @@
+/**
+  说明：只对全局表单做样式调整；个别组件请写到组件文件内
+  */
+@mixin required-flag
+  &:before
+    display: none
+  &:after
+    content: '*'
+    color: $--color-danger
+    margin-left: 2px
+// 当设置buttonAlign=fixed时，需要为button的父级元素增加该属性
+.form-withFixed
+  padding-bottom: 78px  
+
+.anso-dataform,
+.anso-dataform__group,
+.anso-dataform__compared
+  background: #fff
+  .button-align__right
+    text-align: right
+  .button-align__center
+    text-align: center
+  .button-align__left
+    text-align: left
+  .button-align__fixed
+    position: fixed
+    bottom: 1px
+    right: 0
+    z-index: 1
+    padding: 1rem
+    background: #fff
+    width: calc(100% - 184px)
+    text-align: right
+    // line-height: 72px
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.15)
+    .el-form-item__content
+      // element只要是el-form-item就随label-width自带margin-left
+      margin-left: 0!important
+  // 修改底层element表单校验提示*样式
+  .dataform-body__row td span[is-required]
+    @include required-flag
+  .dataform-body__grid .inline-cell[is-required],
+  .el-form-item.is-required:not(.is-no-asterisk)
+    .el-form-item__label
+      @include required-flag
+  // 允许隐藏label
+  .el-form-item[label-hidden] .el-form-item__label
+    display: none
+/* 所有表单体样式（body），全部表单类有效---------- */
+.form-body__container
+  // 默认所有表单，子元素（label+content）--------
+  .el-form-item
+    margin-bottom: $--formItem-space
+  .el-form-item[is-button]
+    margin-bottom: 0
+  // &:not([inline="true"]) > .form-body-content
+  //   > .el-form-item
+  //     display: flex
+  // 默认所有表单类型，文本标签(label) --------
+  .el-form-item__label
+    margin: auto 0
+    color: $--color-text-primary
+    line-height: $--form-text-line-height
+  &[label-position="right"]
+    .el-form-item__label
+      text-align: right
+      padding: 0 $--formItem-label-padding 0 0
+  &[label-position="center"]
+    .el-form-item__label
+      text-align: center
+  &[label-position="left"]
+    .el-form-item__label
+      text-align: left
+      padding: 0 $--formItem-label-padding 0 0
+  .inline-cell > .el-form-item__label
+    width: 100%
+    padding: 0
+  // 所有表单，内容体（content） --------
+  .el-form-item__content
+    line-height: $--form-text-line-height
+  &:not([inline]) .form-body-content .el-form-item__content
+    margin-left: 0 !important
+    flex: 1
+    // justify-content: space-around
+    display: flex
+    // align-items: center
+  // 对grid类型表单，子表单
+  &[type="grid"]
+    > .form-body-content
+      > .el-form-item
+        width: 100%
+      .el-form-item
+        margin-bottom: 0!important
+  // 当labelwrap为auto时候，element-ui会自动根据最长的label，自动设置margin-left，导致篇幅很大
+  &[type="row"],
+  &[inline]
+    .el-form-item__label-wrap
+      margin-left: 0!important
+  // inline类整体body--------
+  &:not([inline])
+    margin: $--form-vertical-margin 0
+  // 只读表单样式，所有布局有效
+  &[readOnly="true"]
+    .el-form-item
+      margin-bottom: $--formItem-readOnlySpace
+    .el-form-item__label
+      color: $--color-text-secondary
+      width: auto
+      @include font-secondary
+    .el-form-item__content
+      margin-left: auto
+      @include font-secondary
+    // form-type=row
+    .el-row
+      margin: $--formItem-readOnlySpace 0
+      .el-form-item
+        margin-bottom: 0 // 防止内部el-form-item 与row 的margin冲突
+    // form-type=grid
+    .inline-cell
+      padding: $--formItem-readOnlySpace $--padding-size-medium !important
+// label-position:top时，全类表单有效
+.el-form-item[label-position="top"]
+  display: block !important
+  .el-form-item__label
+    // line-height: $--form-text-line-height !important
+    margin-bottom: $--margin-primary
+    padding-bottom: 0
+
+/* 所有表单录入元素(包括for、table涉及全系统所有表单元素) ------------- */
+.anso-dataform,.anso-dataform__group
+  .el-select, .el-cascader, .el-slider, .el-date-editor[tag="date"], .el-date-editor[tag="time"]
+    width: 100%
+  .el-input-number
+    width: auto
+  /* el-tag */
+  .el-tag.el-tag--info
+    .el-tag__close
+      color: #fff
+/* 无法通过element temaplate直接配置，所以补充 */
+.el-input__clear:hover,
+.el-icon-circle-close:hover,
+.el-input__inner:hover,
+.el-textarea__inner:hover,
+.el-cascader:not(.is-disabled):hover .el-input__inner,
+.el-select:hover .el-input__inner
+  border-color: $--color-primary
+/* input */
+.el-input
+  .el-input__inner
+    // element-ui 的template 大圆角失效，改不了
+    border-radius: $--border-radius-base
+  &.is-disabled
+    .el-input__inner
+      border-color: $--border-color-base
+      color: $--color-text-placeholder
+/* radio */
+.el-radio
+  .el-radio__input.is-checked+.el-radio__label
+    color: $--color-text-regular
+  .el-radio__input.is-disabled+.el-radio__label
+    color: $--color-text-placeholder
+/* checkbox */
+.el-checkbox
+  .el-checkbox__input.is-checked+.el-checkbox__label
+    color: $--color-text-regular
+  .el-checkbox__input.is-disabled+.el-checkbox__label
+    color: $--color-text-placeholder
+  .el-checkbox__input.is-disabled .el-checkbox__inner
+    background-color: $--background-color-base
+/* upload */
+.el-upload-list.is-disabled+.el-upload.el-upload--picture-card
+  background-color: $--background-color-base
+  border-color: $--border-color-base
+  cursor: not-allowed
+  i
+    color: $--color-text-placeholder
+.el-form-item.el-form-item-text
+  .el-form-item__label
+    color: $--color-text-secondary
+// 时间选择框下拉内容
+.el-time-panel.popperPanel
+  .el-time-panel__btn
+    font-weight: normal
+// 选择下拉框选样式
+.el-select-dropdown
+  .el-select-dropdown__item.selected
+    font-weight: normal
+  .el-select-group__title
+    color: $--color-text-secondary
+.el-select-dropdown.is-multiple
+  .el-select-dropdown__item.selected::after
+    top: 0
+// 开关样式设置
+.el-switch
+  .el-switch__core
+    background-color: $--color-text-placeholder
+  .el-switch__label
+    font-weight: normal
+.el-switch.is-checked.is-disabled
+  .el-switch__core
+    border-color: #A8D1F8
+    background-color: #A8D1F8
+.el-tree
+  .el-tree-node__content
+    padding-right: 30px
+.el-slider
+  .el-slider__runway.disabled
+    background-color: #F0F0F0

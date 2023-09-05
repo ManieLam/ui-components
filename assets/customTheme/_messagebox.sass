@@ -1,0 +1,39 @@
+$--message-box-text-padding-horizontal: 55px
+/* mesage-box */
+.anso-message-box
+  padding-bottom: $--message-box-padding-vertical
+  .el-message-box__header
+    padding: 24px 24px 0
+    .el-message-box__title
+      justify-content: flex-start
+      font-size: 16px !important
+      font-weight: bold
+    .el-message-box__status
+      font-size: 18px !important
+      padding-right: 12px
+    .el-icon-warning
+      color: $--color-danger
+    .el-message-box__headerbtn
+      top: 26px
+      right: 24px
+      font-size: $--message-close-size
+  .el-message-box__content
+    text-align: left !important
+    padding: 16px 24px 0 54px
+  .el-message-box__btns
+    text-align: right !important
+    padding: 32px 24px 0
+
+/* dialog 弹窗 */
+.el-dialog__header
+  border-bottom: 1px solid rgba(0,0,0,0.09)
+  font-weight: bold
+
+/* drawer 抽屉 */
+.el-drawer__header
+  border-bottom: 1px solid rgba(0,0,0,0.09)
+  margin-bottom: 0
+  padding: $--margin-size-medium $--dialog-padding-primary
+  font-weight: bold
+  .el-drawer__close-btn
+    font-size: 13px

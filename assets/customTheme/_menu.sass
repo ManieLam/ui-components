@@ -1,0 +1,24 @@
+.el-menu
+  border: none
+.el-menu-item, .el-submenu__title
+  height: 32px
+  line-height: 32px
+  font-size: 13px !important
+.el-submenu .el-menu-item
+  height: 32px
+  line-height: 32px
+
+.el-menu-vertical:not(.el-menu--collapse)
+  .el-menu-item, .el-submenu__title
+    min-width: 184px
+  .el-submenu .el-menu-item
+    min-width: 184px
+
+.el-menu-item [class^=el-icon-],
+.el-submenu [class^=el-icon-]
+  margin-right: 4px
+  font-size: 14px
+  width: 18px
+
+.el-menu-item.is-active
+  background-color: #1890FF !important
